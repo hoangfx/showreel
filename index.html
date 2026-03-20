@@ -3,36 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FX Showreel</title>
+    <title>Harry's Showreels</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #000000; /* Completely black */
-            color: #ffffff;           /* White text */
+            background-color: #000000;
+            color: #ffffff;
             text-align: center;
+            overflow: hidden; /* Prevents accidental scrolling */
         }
-        .container {
-            line-height: 1.8;
+
+        /* Large "Home" link at the very top */
+        .top-nav {
+            position: absolute;
+            top: 40px; /* Space from the top of the screen */
+            width: 100%;
         }
+
+        .top-nav a {
+            font-size: 2.5rem; /* Matches the "Website" size from before */
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .top-nav a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        .content-box {
+            line-height: 2;
+            font-size: 1.1rem; /* Slightly larger for readability */
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
             margin-top: 10px;
         }
+
         li {
             margin-bottom: 8px;
         }
-        a {
-            color: #00e5ff; /* Cyan link for visibility */
+
+        .link-style {
+            color: #00e5ff;
             text-decoration: none;
             transition: opacity 0.2s;
         }
-        a:hover {
+
+        .link-style:hover {
             text-decoration: underline;
             opacity: 0.8;
         }
@@ -40,11 +68,15 @@
 </head>
 <body>
 
-    <div class="container">
-        <p><strong>FX Showreel (~2 min)</strong></p>
+    <div class="top-nav">
+        <a href="https://laladee.github.io/home/cgi">Home</a>
+    </div>
+
+    <div class="content-box">
+        <p><strong>FX Showreel (~2:00 min)</strong></p>
         <ul>
-            <li>- <a href="https://player.mux.com/M02PF1iW5ozNbdq1Z3esVW02HU1OqV3wjQP4wOh73aO1w" target="_blank">Link</a></li>
-            <li>- <a href="https://adilo.bigcommand.com/watch/WB0RhB9e" target="_blank">Link (Backup)</a></li>
+            <li>- <a href="https://player.mux.com/M02PF1iW5ozNbdq1Z3esVW02HU1OqV3wjQP4wOh73aO1w" class="link-style" target="_blank">Link</a></li>
+            <li>- <a href="https://adilo.bigcommand.com/watch/WB0RhB9e" class="link-style" target="_blank">Link (Backup)</a></li>
         </ul>
     </div>
 
